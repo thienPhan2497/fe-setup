@@ -4,10 +4,6 @@
   <img alt="AXL" src="magic-logo.jpg" width=300/>
 </p>
 
-[![Version](https://img.shields.io/npm/v/eslint-config-productsway.svg)](https://www.npmjs.com/package/eslint-config-productsway)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
-[![Twitter: jellydn](https://img.shields.io/twitter/follow/jellydn.svg?style=social)](https://twitter.com/jellydn)
-
 > Enhance your code quality
 
 ## Setup Scripts
