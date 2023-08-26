@@ -57,3 +57,7 @@ React components should take full advantage of [jest snapshots](https://jestjs.i
 - npm:format meaning npm run format
 - concurrently: using for multiple scripts with chalk package color
 - beta.emojipedia.org: for icon in bash
+
+### Useful Links
+* [Git Hooks and Husky](https://www.git-tower.com/blog/git-hooks-husky/)
+* [ESLint, Prettier and Husky](https://dev.to/ivadyhabimana/setup-eslint-prettier-and-husky-in-a-node-project-a-step-by-step-guide-946)
