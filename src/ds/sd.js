@@ -1,9 +1,11 @@
+import React from 'react';
 
 const sd = () => (
 	<div className='App'>
 		<header className='App-header'>
 			<p>
-				Edit <code>src/App.js</code> and save to reload. I think it is because lintstaged
+				Edit <code>src/App.js</code> and save to reload. I think it is
+				because instated
 			</p>
 			<a
 				className='App-link'
