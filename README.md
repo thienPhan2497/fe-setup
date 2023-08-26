@@ -17,5 +17,5 @@ Turns off all eslint rules that are unnecessary or might conflict with Prettier,
 ### Words
 
 --save-exact ensures that everyone will install the same version of prettier to avoid inconsistency
-npm:format meaning npm run format
-concurrently: using for multiple scripts with chalk package color
+- npm:format meaning npm run format
+- concurrently: using for multiple scripts with chalk package color
