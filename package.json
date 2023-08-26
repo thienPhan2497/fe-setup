@@ -45,7 +45,7 @@
     "prettier": "3.0.2"
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": ["npm:lint:fix", "npm:lint:format"],
+    "**/*.{js,jsx,ts,tsx}": ["npm:lint:format", "npm:lint:fix"],
     "**/*.{css,scss,md,html,json}": ["npm:lint:format"]
   }
 }
