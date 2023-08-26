@@ -4,6 +4,12 @@
   <img alt="AXL" src="magic-logo.jpg" width=300/>
 </p>
 
+[![Version](https://img.shields.io/npm/v/eslint-config-productsway.svg)](https://www.npmjs.com/package/eslint-config-productsway)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
+[![Twitter: jellydn](https://img.shields.io/twitter/follow/jellydn.svg?style=social)](https://twitter.com/jellydn)
+
+> Enhance your code quality
+
 ## Setup Scripts
 
 ``` scripts
@@ -39,11 +45,22 @@ Examples:
 
 For a patch release
 
-`fix: correct the import mistakes we messed up (#1234)`
+`fix:🐛 Correct the import mistakes we messed up (#1234)`
 
 For a minor release
 
-`feat: add a new feature that we all love and need (#1234)`
+`feat:✨ Add a new feature that we all love and need (#1234)`
+
+Using emoji [Gitmoji](https://gitmoji.dev/)
+
+``` emo
+"🐛 Fix: Fixed bug"
+"🚀 Successfully merge"
+"📄 Doc: Updated"
+"✨ Introduce new features"
+"✅ Add, update, or pass tests"
+"♻️ Refactor code"
+```
 
 ## Code Quality
 
