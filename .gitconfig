@@ -1,3 +1,5 @@
+Execute this: git remote set-url origin <https://abc.xyz/USERNAME/REPOSITORY.git> to resolve acp problems fatal: Could not read from remote repository.
+
 [alias]
 	pm = pull origin master
 	st = status -s
