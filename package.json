@@ -3,25 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently --names \"LINT,START\" -c \"bgBlack.bold,bgMagentaBright.italic\" \"npm:lint\" \"react-scripts start\"",
+    "lint": "concurrently --names \"FORMAT,LINT:JS\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm:format\" \"npm:lint:js\"",
+    "lint:js": "eslint ./src --ext .js,.jsx --color --fix --max-warnings=0 --cache",
+    "lint:css": "stylelint \"packages/**/*.scss\" --fix",
+    "format": "prettier --config ./.prettierrc src --write",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "eject": "react-scripts eject",
+    "remove": "rm -rf node_modules",
+    "postinstall": "husky install"
   },
   "browserslist": {
     "production": [
@@ -34,5 +30,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "eslint": "^8.48.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^14.0.1",
+    "prettier": "3.0.2"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": ["npm:lint:fix", "npm:lint:format"],
+    "**/*.{css,scss,md,html,json}": ["npm:lint:format"]
   }
 }

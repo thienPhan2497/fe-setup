@@ -1,0 +1,25 @@
+[alias]
+	pm = pull origin master
+	st = status -s
+	s = status
+	pu = pull
+	p =  push --no-verify
+	po = push origin --force
+	b = branch
+	cm = commit -m
+	c = checkout
+	cb = checkout -b
+	bd = branch -D
+	rs = reset --hard
+	cpm = !git checkout master && git pull
+	acp = !git add . && git commit -m "message" && git push
+	acpf = !git add . && git commit -m "message" && git push -f
+	ac = !git add . && git commit -m "message"
+	cp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
+	cpf = !git commit -m "message" && git push -f
+	cae = !git commit --allow-empty -m "message" && git push --no-verify
+	me = merge master
+	rt = restore .
+[user]
+	name = Thien-Phan
+	email = thien@email.com
