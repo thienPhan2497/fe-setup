@@ -2,13 +2,13 @@
 
 ## Setup Scripts
  ```
-+ `npm create-react-app feSetUp`
-+ `npm i -D eslint eslint-config-airbnb`
-+ `npx eslint --init` -> config .eslintrc.json`
-+ npm i -D --save-exact prettier` -> config .prettierrc.json
-+ `npm i -D eslint-config-prettier` -> Add prettier to the last of extends in .eslintrc.json:
-Turns off all eslint rules that are unnecessary or might conflict with Prettier, eslint only check code syntax style while Prettier check code formatting
-+ `npm i -D concurrently`  -> multiple script running
++ npm create-react-app feSetUp
++ npm i -D eslint eslint-config-airbnb
++ npx eslint --init                                |------------------------------------------> Config .eslintrc.json`
++ npm i -D --save-exact prettier                   |------------------------------------------> Config .prettierrc.json
++ npm i -D eslint-config-prettier                  |------------------------------------------> Add prettier to the last of extends in .eslintrc.json:
+                                                                                        Turns off all eslint rules that are unnecessary or might conflict with Prettier, eslint only check code syntax style while Prettier check code formatting
++ npm i -D concurrently                            |------------------------------------------> Multiple script running
 ```
 
 > It will take a little time the first time.  Be patient.
