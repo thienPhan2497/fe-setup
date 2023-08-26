@@ -20,9 +20,9 @@
 
 - npm i webpack webpack-cli html-webpack-plugin webpack-dev-server babel-loader css-loader -D
 
-### Running Storybook
+### Running project
 
-Start the storybook locally on port 3000.
+Start the project locally on port 3000.
 
 ``` dev
 npm start
