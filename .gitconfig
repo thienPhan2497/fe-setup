@@ -1,5 +1,3 @@
-Execute this: git remote set-url origin <https://abc.xyz/USERNAME/REPOSITORY.git> to resolve acp problems fatal: Could not read from remote repository.
-
 [alias]
 	pm = pull origin master
 	st = status -s
@@ -14,7 +12,7 @@ Execute this: git remote set-url origin <https://abc.xyz/USERNAME/REPOSITORY.git
 	bd = branch -D
 	rs = reset --hard
 	cpm = !git checkout master && git pull
-	acp = !git add . && git commit -m "message" && git push
+	acp = !git commit -am "message" && git push
 	acpf = !git add . && git commit -m "message" && git push -f
 	ac = !git add . && git commit -m "message"
 	cp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
