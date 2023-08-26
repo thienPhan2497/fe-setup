@@ -10,7 +10,7 @@
   "scripts": {
     "start": "concurrently --names \"LINT,START\" -c \"bgBlack.bold,bgMagentaBright.italic\" \"npm:lint\" \"react-scripts start\"",
     "lint": "concurrently --names \"FORMAT,LINT:JS\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm:format\" \"npm:lint:js\"",
-    "lint:js": "eslint ./src --ext js,jsx --color --fix --max-warnings=0 --cache",
+    "lint:js": "eslint src --ext .js,.jsx --color --fix --max-warnings=0 --cache",
     "lint:css": "stylelint \"packages/**/*.scss\" --fix",
     "format": "prettier --config ./.prettierrc src --write",
     "build": "react-scripts build",
