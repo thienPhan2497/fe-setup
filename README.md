@@ -1,7 +1,12 @@
 # Getting Started with FE project set up
 
+<p align="center">
+  <img alt="AXL" src="magic-logo.jpg" width=300/>
+</p>
+
 ## Setup Scripts
- ```
+
+``` scripts
 + npm create-react-app feSetUp
 + npm i -D eslint eslint-config-airbnb
 + npx eslint --init                                |------------------------------------------> Config .eslintrc.json`
@@ -16,16 +21,18 @@
 - npm i webpack webpack-cli html-webpack-plugin webpack-dev-server babel-loader css-loader -D
 
 ### Running Storybook
+
 Start the storybook locally on port 3000.
 
-```
+``` dev
 npm start
 ```
 
 ## Merging/Releases
+
 The versioning is also automated via a [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/#summary) as the commit message for your squashed commit to master.
 
-Examples: 
+Examples:
 
 For a patch release
 
@@ -36,14 +43,15 @@ For a minor release
 `feat: add a new feature that we all love and need (#1234)`
 
 ## Code Quality
+
 JS code is linted by [ESLint](https://eslint.org/) while our SCSS code is linted by [Stylelint](https://github.com/stylelint/stylelint).
 
 Code quality checks are run on every commit and every push to origin.
 
 You can also be run manually via the following commands:
 
-* `npm run lint:js`
-* `npm run lint:css`
+- `npm run lint:js`
+- `npm run lint:css`
 
 ## Unit Tests
 
@@ -59,5 +67,6 @@ React components should take full advantage of [jest snapshots](https://jestjs.i
 - beta.emojipedia.org: for icon in bash
 
 ### Useful Links
-* [Git Hooks and Husky](https://www.git-tower.com/blog/git-hooks-husky/)
-* [ESLint, Prettier and Husky](https://dev.to/ivadyhabimana/setup-eslint-prettier-and-husky-in-a-node-project-a-step-by-step-guide-946)
+
+- [Git Hooks and Husky](https://www.git-tower.com/blog/git-hooks-husky/)
+- [ESLint, Prettier and Husky](https://dev.to/ivadyhabimana/setup-eslint-prettier-and-husky-in-a-node-project-a-step-by-step-guide-946)
