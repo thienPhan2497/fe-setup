@@ -1,9 +1,15 @@
 {
 	"env": {
 		"browser": true,
-		"es2021": true
+		"es2021": true,
+		"node": true
 	},
-	"extends": ["airbnb", "prettier"],
+	"overrides": [],
+	"extends": [
+		"airbnb",
+		"plugin:import/recommended",
+		"prettier"
+	],
 	"parserOptions": {
 		"ecmaFeatures": {
 			"jsx": true
@@ -11,13 +17,49 @@
 		"ecmaVersion": "latest",
 		"sourceType": "module"
 	},
-	"plugins": ["react"],
+	"plugins": ["react", "import"],
 	"rules": {
 		"camelcase": 1,
 		"eqeqeq": ["warn"],
-		"max-len": ["error", { "code": 80 }],
+		"max-len": ["error", { "code": 100 }],
 		"semi": 0,
 		"comma-dangle": 0,
-		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+		"import/extensions": 0,
+		"import/no-unresolved": 0,
+		"import/order": "warn"
+
+		// "camelcase": 1,
+		// "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+		// "array-bracket-spacing": ["error", "never"], // no spacing around array values
+		// "arrow-parens": 0, // '0' means you can skip the parenthesis around the arrow function argument when there is only one argument
+		// "brace-style": ["error", "1tbs", { "allowSingleLine": true }], // opening braces should be on the same line as the statement
+		// "comma-dangle": ["error", "always-multiline"], // enforce trailing commas on multiline arrays/objects
+		// "eol-last": "error", // require a newline at the end of the file
+		// "eqeqeq": "error", // require the use of === and !==
+		// "import/extensions": 0, // '0' means import statements do not require a file extension
+		// "import/no-unresolved": 0, // '0' means we are allowed to have unresolved imports
+		// "import/order": "warn", // warn when imports are not ordered as expected
+		// "indent": ["error", 2, { "SwitchCase": 1 }], // use an indentation of 2 spaces
+		// "keyword-spacing": ["error", { "before": true, "after": true }], // require spaces around keywords
+		// "max-len": 0, // '0' means lines can be as long as you want
+		// "no-console": 0, // '0' means we allow console.log throughout the project
+		// "no-empty": "error", // disallow empty blocks
+		// "no-multi-spaces": "error", // disallow multiple spaces
+		// "no-param-reassign": 0, // '0' means we are allowed to reassign function parameters to new values
+		// "no-trailing-spaces": "error", // disallow trailing spaces
+		// "no-unused-vars": "off", // setting to off so it doesn't conflict with @typescript-eslint/no-unused-vars
+		// "no-useless-catch": 0, // allow useless catch clauses; we always wrap async function calls in a try/catch block
+		// "no-var": "error", // disallow the use of var
+		// "no-multiple-empty-lines": ["error", { "max": 1 }], // disallow multiple empty lines
+		// "no-useless-escape": 0, // '0' means we are allowed to have useless escape characters (used in our unit test files)
+		// "object-curly-newline": ["error", { "ImportDeclaration": "never" }], // allow many named imports on a single line
+		// "object-curly-spacing": ["error", "always"], // require spaces around brackets
+		// "padded-blocks": ["error", "never"], // no padding around blocks
+		// "quotes": ["error", "single"], // use single quotes
+		// "semi": ["error", "always"], // require semicolons at the end of statements
+		// "space-before-blocks": ["error", "always"], // require a space between blocks
+		// "space-before-function-paren": ["error", "always"], // require a space between function name and parenthesis
+		// "space-infix-ops": ["error", { "int32Hint": false }] // require spaces around operators
 	}
 }

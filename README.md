@@ -15,6 +15,8 @@
                                                                                         Turns off all eslint rules that are unnecessary or might conflict with Prettier, eslint only check code syntax style while Prettier check code formatting
 + npm i -D concurrently                            |------------------------------------------> Multiple script running
 + npx mrm@2 lint-staged                            |------------------------------------------> Config pre-commit, this will install both husky and lint-staged
+
++ npm i -D eslint-plugin-import                    |------------------------------------------> Config .eslintrc.json with more rules and should be used with typescript
 ```
 
 > It will take a little time the first time.  Be patient.
