@@ -9,20 +9,21 @@
 ``` scripts
 + npm create-react-app feSetUp
 + npm i -D eslint eslint-config-airbnb
-+ npx eslint --init                                |------------------------------------------> Config .eslintrc.json`
++ npx eslint --init                                |------------------------------------------> Config .eslintrc.json
 + npm i -D --save-exact prettier                   |------------------------------------------> Config .prettierrc.json
 + npm i -D eslint-config-prettier                  |------------------------------------------> Add prettier to the last of extends in .eslintrc.json:
                                                                                         Turns off all eslint rules that are unnecessary or might conflict with Prettier, eslint only check code syntax style while Prettier check code formatting
 + npm i -D concurrently                            |------------------------------------------> Multiple script running
++ npx mrm@2 lint-staged                            |------------------------------------------> Config pre-commit, this will install both husky and lint-staged
 ```
 
 > It will take a little time the first time.  Be patient.
 
 - npm i webpack webpack-cli html-webpack-plugin webpack-dev-server babel-loader css-loader -D
 
-### Running project
+### Running Storybook
 
-Start the project locally on port 3000.
+Start the storybook locally on port 3000.
 
 ``` dev
 npm start
@@ -70,3 +71,4 @@ React components should take full advantage of [jest snapshots](https://jestjs.i
 
 - [Git Hooks and Husky](https://www.git-tower.com/blog/git-hooks-husky/)
 - [ESLint, Prettier and Husky](https://dev.to/ivadyhabimana/setup-eslint-prettier-and-husky-in-a-node-project-a-step-by-step-guide-946)
+- [Pre-commit Hook](https://prettier.io/docs/en/precommit.html)
