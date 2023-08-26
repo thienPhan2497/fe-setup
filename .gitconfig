@@ -12,10 +12,10 @@
 	bd = branch -D
 	rs = reset --hard
 	cpm = !git checkout master && git pull
-	acp = !git commit -am "message" && git push
+	cp = !git commit -am "message" && git push
 	acpf = !git add . && git commit -m "message" && git push -f
 	ac = !git add . && git commit -m "message"
-	cp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
+	acp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
 	cpf = !git commit -m "message" && git push -f
 	cae = !git commit --allow-empty -m "message" && git push --no-verify
 	me = merge master
