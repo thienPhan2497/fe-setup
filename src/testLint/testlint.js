@@ -1,6 +1,6 @@
 import React from 'react';
 
-const sd = () => (
+const testlint = () => (
 	<div className='App'>
 		<header className='App-header'>
 			<p>
@@ -18,4 +18,4 @@ const sd = () => (
 	</div>
 );
 
-export default sd;
+export default testlint;

@@ -87,3 +87,4 @@ React components should take full advantage of [jest snapshots](https://jestjs.i
 - [Git Hooks and Husky](https://www.git-tower.com/blog/git-hooks-husky/)
 - [ESLint, Prettier and Husky](https://dev.to/ivadyhabimana/setup-eslint-prettier-and-husky-in-a-node-project-a-step-by-step-guide-946)
 - [Pre-commit Hook](https://prettier.io/docs/en/precommit.html)
+- [LintStyle css](https://dev.to/nausaf/set-up-linting-and-formatting-for-code-and-scss-files-in-a-nextjs-project-43fb)
