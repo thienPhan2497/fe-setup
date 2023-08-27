@@ -19,6 +19,7 @@
 + npx mrm@2 lint-staged                            |------------------------------------------> Config pre-commit, this will install both husky and lint-staged
 
 + npm i -D eslint-plugin-import                    |------------------------------------------> Config .eslintrc.json with more rules and should be used with typescript
++ npm install --save-dev npm-check                  |------------------------------------------> Find unused and missing packages. Remove to improve build performance
 ```
 
 > It will take a little time the first time.  Be patient.
@@ -81,6 +82,7 @@ React components should take full advantage of [jest snapshots](https://jestjs.i
 - npm:format meaning npm run format
 - concurrently: using for multiple scripts with chalk package color
 - beta.emojipedia.org: for icon in bash
+- npm uninstall --save `package` : The -S or --save flag indicates that the package will be removed from your main dependencies.
 
 ### Useful Links
 
@@ -88,3 +90,7 @@ React components should take full advantage of [jest snapshots](https://jestjs.i
 - [ESLint, Prettier and Husky](https://dev.to/ivadyhabimana/setup-eslint-prettier-and-husky-in-a-node-project-a-step-by-step-guide-946)
 - [Pre-commit Hook](https://prettier.io/docs/en/precommit.html)
 - [LintStyle css](https://dev.to/nausaf/set-up-linting-and-formatting-for-code-and-scss-files-in-a-nextjs-project-43fb)
+
+### Optimized Links - JUST DON'T CARE ABOUT THIS
+
+- [Optimize nextjs](https://forward.digital/blog/how-to-optimise-a-nextjs-site)
